@@ -36,11 +36,9 @@ SG = NameRegex, FilterKey = "(?i)(新加坡|狮城|SG|Singapore)"
 US = NameRegex, FilterKey = "(?i)(美国|圣何塞|US|United States)"
 
 [Proxy Group]
-# 手动策略组
 台湾 = select, TW, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
 狮城 = select, SG, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
 美国 = select, US, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
-
 
 [Rule]
 # Local Rule
@@ -57,7 +55,7 @@ FINAL, US
 
 [Remote Rule]
 https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy = TW, tag = AI, enabled = true
-https://rule.kelee.one/Loon/Netflix.lsr, policy = TW, tag = Netflix, enabled = true
+https://kelee.one/Tool/Loon/Lsr/TikTok.lsr, policy = US, tag = TikTok, enabled = true
 https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy = DIRECT, tag = LAN, enabled = true
 https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy = DIRECT, tag = CN REGION, enabled = true
 

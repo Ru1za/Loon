@@ -34,9 +34,9 @@ SG = NameRegex, FilterKey = "(?i)(新加坡|狮城|SG|Singapore)"
 US = NameRegex, FilterKey = "(?i)(美国|圣何塞|US|United States)"
 
 [Proxy Group]
-台湾 = select, TW, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
-狮城 = select, SG, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
-美国 = select, US, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+Taiwan = select, TW, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+Singapore = select, SG, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+United States = select, US, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 
 [Rule]
 # Local Rule

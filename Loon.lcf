@@ -52,11 +52,11 @@ United States = select, US, img-url = https://raw.githubusercontent.com/Orz-3/mi
 FINAL, US
 
 [Remote Rule]
-https://kelee.one/Tool/Loon/Lsr/Apple.lsr, policy = US, tag = Apple, enabled = true
-https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy = TW, tag = AI, enabled = true
-https://kelee.one/Tool/Loon/Lsr/Telegram.lsr, policy = US, tag = Telegram, enabled = true
-https://kelee.one/Tool/Loon/Lsr/Youtube.lsr, policy = SG, tag = Youtube, enabled = true
-https://kelee.one/Tool/Loon/Lsr/Spotify.lsr, policy = US, tag = Spotify, enabled = true
+https://kelee.one/Tool/Loon/Lsr/Apple.lsr, policy = United States, tag = Apple, enabled = true
+https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy = Taiwan, tag = AI, enabled = true
+https://kelee.one/Tool/Loon/Lsr/Telegram.lsr, policy = United States, tag = Telegram, enabled = true
+https://kelee.one/Tool/Loon/Lsr/Youtube.lsr, policy = Singapore, tag = Youtube, enabled = true
+https://kelee.one/Tool/Loon/Lsr/Spotify.lsr, policy = United States, tag = Spotify, enabled = true
 https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy = DIRECT, tag = LAN, enabled = true
 https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy = DIRECT, tag = CN REGION, enabled = true
 

@@ -34,19 +34,10 @@ bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/
 美国节点 = NameRegex, FilterKey = "(?i)(美国|圣何塞|US|United States)"
 
 [Proxy Group]
-# --------------------------------
-# 场景策略
-台湾手动场景=ssid, default=台湾手动策略, cellular=台湾手动策略, "Redmi_2903_5G"=DIRECT, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
-狮城手动场景=ssid, default=狮城手动策略, cellular=台湾手动策略, "Redmi_2903_5G"=DIRECT, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
-美国手动场景=ssid, default=美国手动策略, cellular=台湾手动策略, "Redmi_2903_5G"=DIRECT, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
-# --------------------------------
-# 地区策略
+# 手动策略组
 台湾手动策略=select, 台湾节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
 狮城手动策略=select, 狮城节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
 美国手动策略=select, 美国节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
-# --------------------------------
-# 兜底策略后备
-兜底后备策略=fallback, 台湾自动场景, 狮城自动场景, 美国自动场景, interval=60, max-timeout=2000, img-url=https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/fallback.png
 
 [Rule]
 # Local Rule
@@ -62,13 +53,12 @@ bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/
 FINAL, 美国手动场景
 
 [Remote Rule]
-https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy = 台湾手动场景, tag = AI, enabled = true
-https://kelee.one/Tool/Loon/Lsr/Telegram.lsr, policy = 美国手动场景, tag = Telegram, enabled = true
+https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy = 台湾手动策略, tag = AI, enabled = true
+https://kelee.one/Tool/Loon/Lsr/Telegram.lsr, policy = 美国手动策略, tag = Telegram, enabled = true
 https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy = DIRECT, tag = LAN, enabled = true
 https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy = DIRECT, tag = CN REGION, enabled = true
 
 [Host]
-ssid: Redmi_2903_5G=server: 192.168.88.1
 
 [Rewrite]
 

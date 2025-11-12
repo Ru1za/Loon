@@ -50,7 +50,7 @@ bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/
 # IP-CIDR, 127.0.0.0/8, DIRECT
 # 配置文件已自带远程GEOIP, cn, DIRECT规则，请勿在此添加
 # 请勿修改远程CN REGION规则的排序甚至删除
-FINAL, 美国手动场景
+FINAL, 美国手动策略
 
 [Remote Rule]
 https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy = 台湾手动策略, tag = AI, enabled = true

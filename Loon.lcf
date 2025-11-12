@@ -77,7 +77,7 @@ ssid: Redmi_2903_5G=server: 10.0.0.1
 [Plugin]
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, enabled = true
 https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, enabled = true
-https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy = US, enabled = true
+https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy = 兜底后备策略, enabled = true
 https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled = true
 
 [Mitm]

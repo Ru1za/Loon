@@ -29,14 +29,24 @@ bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/
 [Remote Proxy]
 
 [Remote Filter]
-TW = NameRegex, FilterKey = "(?i)(台湾|彰化|TW|Tai)"
-SG = NameRegex, FilterKey = "(?i)(新加坡|狮城|SG|Singapore)"
-US = NameRegex, FilterKey = "(?i)(美国|圣何塞|US|United States)"
+台湾节点 = NameRegex, FilterKey = "(?i)(台湾|彰化|TW|Tai)"
+狮城节点 = NameRegex, FilterKey = "(?i)(新加坡|狮城|SG|Singapore)"
+美国节点 = NameRegex, FilterKey = "(?i)(美国|圣何塞|US|United States)"
 
 [Proxy Group]
-Taiwan = select, TW, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
-Singapore = select, SG, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
-United States = select, US, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+# --------------------------------
+# 场景策略
+台湾手动场景=ssid, default=台湾手动策略, cellular=台湾手动策略, "Redmi_2903_5G"=DIRECT, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
+狮城手动场景=ssid, default=狮城手动策略, cellular=台湾手动策略, "Redmi_2903_5G"=DIRECT, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
+美国手动场景=ssid, default=美国手动策略, cellular=台湾手动策略, "Redmi_2903_5G"=DIRECT, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SSID.png
+# --------------------------------
+# 地区策略
+台湾手动策略=select, 台湾节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+狮城手动策略=select, 狮城节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+美国手动策略=select, 美国节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+# --------------------------------
+# 兜底策略后备
+兜底后备策略=fallback, 台湾自动场景, 狮城自动场景, 美国自动场景, interval=60, max-timeout=2000, img-url=https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/fallback.png
 
 [Rule]
 # Local Rule

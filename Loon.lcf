@@ -34,15 +34,16 @@ SG = NameRegex, FilterKey = "(?i)(新加坡|狮城|SG|Singapore)"
 US = NameRegex, FilterKey = "(?i)(美国|圣何塞|US|United States)"
 
 [Proxy Group]
-SELECT = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
-Apple = select,US,DIRECT,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
-Telegram = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
-Youtube = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
-Spotify = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
-Emby = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png
-Taiwan = select,TW,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
-Singapore = select,SG,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
-United States = select,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+SELECT = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Global.png
+Apple = select,US,DIRECT,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Apple_1.png
+OpenAI = select,TW,US,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/ChatGPT.png
+Telegram = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Telegram.png
+YouTube = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/YouTube.png
+Spotify = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Spotify.png
+Emby = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Emby.png
+Taiwan = select,TW,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Taiwan.png
+Singapore = select,SG,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Singapore.png
+United States = select,US,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/United_States.png
 
 [Rule]
 # Local Rule

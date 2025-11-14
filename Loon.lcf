@@ -34,7 +34,7 @@ SG = NameRegex, FilterKey = "(?i)(新加坡|狮城|SG|Singapore)"
 US = NameRegex, FilterKey = "(?i)(美国|圣何塞|US|United States)"
 
 [Proxy Group]
-Global = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+SELECT = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 Apple = select,US,DIRECT,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
 Telegram = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
 Youtube = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
@@ -55,7 +55,7 @@ United States = select,US,img-url = https://raw.githubusercontent.com/Orz-3/mini
 # IP-CIDR, 127.0.0.0/8, DIRECT
 # 配置文件已自带远程GEOIP, cn, DIRECT规则，请勿在此添加
 # 请勿修改远程CN REGION规则的排序甚至删除
-FINAL, Global
+FINAL, SELECT
 
 [Remote Rule]
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Loon/Apple/Apple.list, policy=Apple, tag=Apple, enabled=true

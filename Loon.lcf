@@ -29,15 +29,20 @@ bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/
 [Remote Proxy]
 
 [Remote Filter]
-台湾节点 = NameRegex, FilterKey = "(?i)(台湾|彰化|TW|Tai)"
-狮城节点 = NameRegex, FilterKey = "(?i)(新加坡|狮城|SG|Singapore)"
-美国节点 = NameRegex, FilterKey = "(?i)(美国|圣何塞|US|United States)"
+TW = NameRegex, FilterKey = "(?i)(台湾|彰化|TW|Tai)"
+SG = NameRegex, FilterKey = "(?i)(新加坡|狮城|SG|Singapore)"
+US = NameRegex, FilterKey = "(?i)(美国|圣何塞|US|United States)"
 
 [Proxy Group]
 # 手动策略组
-台湾手动策略=select, 台湾节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
-狮城手动策略=select, 狮城节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
-美国手动策略=select, 美国节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+SELECT = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+Apple = select,TW,SG,US,DIRECT,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+Telegram = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+Youtube = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
+Spotify = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
+Taiwan = select,TW,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+Singapore = select,SG,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+United States = select,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 
 [Rule]
 # Local Rule
@@ -50,11 +55,11 @@ bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/
 # IP-CIDR, 127.0.0.0/8, DIRECT
 # 配置文件已自带远程GEOIP, cn, DIRECT规则，请勿在此添加
 # 请勿修改远程CN REGION规则的排序甚至删除
-FINAL, 美国手动策略
+FINAL, SELECT
 
 [Remote Rule]
-https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy = 台湾手动策略, tag = AI, enabled = true
-https://kelee.one/Tool/Loon/Lsr/Telegram.lsr, policy = 美国手动策略, tag = Telegram, enabled = true
+https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy = Taiwan, tag = AI, enabled = true
+https://kelee.one/Tool/Loon/Lsr/Telegram.lsr, policy = Telegram, tag = Telegram, enabled = true
 https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy = DIRECT, tag = LAN, enabled = true
 https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy = DIRECT, tag = CN REGION, enabled = true
 

@@ -34,8 +34,8 @@ SG = NameRegex, FilterKey = "(?i)(新加坡|狮城|SG|Singapore)"
 US = NameRegex, FilterKey = "(?i)(美国|圣何塞|US|United States)"
 
 [Proxy Group]
-SELECT = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
-Apple = select,TW,SG,US,DIRECT,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+Global = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+Apple = select,US,DIRECT,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
 Telegram = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
 Youtube = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
 Spotify = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
@@ -54,7 +54,7 @@ United States = select,US,img-url = https://raw.githubusercontent.com/Orz-3/mini
 # IP-CIDR, 127.0.0.0/8, DIRECT
 # 配置文件已自带远程GEOIP, cn, DIRECT规则，请勿在此添加
 # 请勿修改远程CN REGION规则的排序甚至删除
-FINAL, SELECT
+FINAL, Global
 
 [Remote Rule]
 https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy = Taiwan, tag = AI, enabled = true
@@ -71,7 +71,7 @@ https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy = DIRECT, tag = CN R
 [Plugin]
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, enabled = true
 https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, enabled = true
-https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy = 美国手动策略, enabled = true
+https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy = Global, enabled = true
 https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled = true
 
 [Mitm]

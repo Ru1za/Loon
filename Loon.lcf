@@ -39,6 +39,7 @@ Apple = select,US,DIRECT,img-url = https://raw.githubusercontent.com/Orz-3/mini/
 Telegram = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
 Youtube = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
 Spotify = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
+Emby = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png
 Taiwan = select,TW,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
 Singapore = select,SG,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
 United States = select,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png

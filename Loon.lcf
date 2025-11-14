@@ -34,7 +34,6 @@ SG = NameRegex, FilterKey = "(?i)(新加坡|狮城|SG|Singapore)"
 US = NameRegex, FilterKey = "(?i)(美国|圣何塞|US|United States)"
 
 [Proxy Group]
-# 手动策略组
 SELECT = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 Apple = select,TW,SG,US,DIRECT,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
 Telegram = select,TW,SG,US,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
